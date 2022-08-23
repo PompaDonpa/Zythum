@@ -14,3 +14,11 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Zythum"
 include ':app'
+include ':core'
+include ':onboarding'
+include ':onboarding:onboarding_domain'
+include ':onboarding:onboarding_presentation'
+include ':openbrewery'
+include ':openbrewery:openbrewery_data'
+include ':openbrewery:openbrewery_domain'
+include ':openbrewery:openbrewery_presentation'
