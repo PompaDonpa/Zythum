@@ -1,4 +1,4 @@
-package com.example.zythum.ui.theme
+package com.zythum.zythum.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

@@ -1,10 +1,13 @@
-package com.example.zythum.ui.theme
+package com.zythum.zythum.ui.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.darkColors
 import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
+import com.zythum.core_ui.Dimensions
+import com.zythum.core_ui.LocalSpacing
 
 private val DarkColorPalette = darkColors(
     primary = Purple200,
@@ -34,11 +37,12 @@ fun ZythumTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable
     } else {
         LightColorPalette
     }
-
-    MaterialTheme(
-        colors = colors,
-        typography = Typography,
-        shapes = Shapes,
-        content = content
-    )
+    CompositionLocalProvider(LocalSpacing provides Dimensions()) {
+        MaterialTheme(
+            colors = colors,
+            typography = Typography,
+            shapes = Shapes,
+            content = content
+        )
+    }
 }

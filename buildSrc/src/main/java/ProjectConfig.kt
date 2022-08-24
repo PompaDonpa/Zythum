@@ -1,6 +1,6 @@
 object ProjectConfig {
     const val appId = "com.zythum.zythum"
-    const val compileSdk = 31
+    const val compileSdk = 33
     const val minSdk = 21
     const val targetSdk = 31
     const val versionCode = 1
