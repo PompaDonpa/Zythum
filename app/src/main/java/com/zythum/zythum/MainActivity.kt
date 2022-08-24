@@ -39,6 +39,5 @@ class MainActivity : ComponentActivity() {
                     composable(Route.SOT_DESC){}
             }
         }
-    }
-}
+    }}}
 
